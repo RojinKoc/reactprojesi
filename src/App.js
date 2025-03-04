@@ -1,11 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import { Title } from './components';
 
 function App() {
   return (
     <div className="App">
       <h3> { process.env.NODE_ENV} </h3>
       <p> {process.env.REACT_APP_API_URL} </p>
+      <Title> { process.env.NODE_ENV} </Title>
+      <Title theme="dark"> { process.env.NODE_ENV} </Title>
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
